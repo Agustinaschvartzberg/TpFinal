@@ -103,5 +103,30 @@ p{
     align-self: center;
 }
 
+.Generos{
+    /* propiedades de flexbox*/
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.Musical {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+
+.Drama {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+   font-family: 'Josefine+Sans', sans-serif;
+   font-size: 30px;
+   font-weight: lighter;
+}
+
 
 

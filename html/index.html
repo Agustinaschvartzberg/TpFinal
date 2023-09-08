@@ -11,19 +11,33 @@
     <header>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
         <h1>MOVIE MANIA</h1>
-        <img src="../img/LOGO.png" width="260px" height="300">
+        <body class="coneccion">
+            <ul class="lista">
+                <head> <li><a href="./search-results.html" class="letracomun">SEARCH</a></li></head>
+                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
+                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
+                <head> <li><a href="./detail-serie.html" id="letracomun">DETAIL SERIE</a></li></head>
+                <head> <li><a href="./detail-movie.html" id="letracomun">DETAIL MOVIE</a></li></head>
+                <head> <li><a href="./detail-genres.html" id="letracomun">DETAIL GENRES</a></li></head>
+            </ul>
+            <img src="../img/LOGO.png" width="260px" height="300">
+        </body>
+        <h3> Formulario: </h3>
+    <form action="resultados.html" method ="GET">
+        <section class="Formulario">
+        <div>
+            <input id="inputNombre" type="text" name="inputNombre" value="" placeholder="Buscador">
+        </div>
+        <div>
+            <input type="email" name="email" value="" placeholder="indica tu mail">
+        </div>
+        <div>
+            <input type="genero" name="genero" value="" placeholder="Indica tu genero favorito">
+        </div>
+        <button type="submit">Enviar</button>
+    </section>
+    </form>
 
-    
-    <body class="coneccion">
-        <ul class="lista">
-            <head> <li><a href="./search-results.html" class="letracomun">SEARCH</a></li></head>
-            <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-            <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
-            <head> <li><a href="./detail-serie.html" id="letracomun">DETAIL SERIE</a></li></head>
-            <head> <li><a href="./detail-movie.html" id="letracomun">DETAIL MOVIE</a></li></head>
-            <head> <li><a href="./detail-genres.html" id="letracomun">DETAIL GENRES</a></li></head>
-        </ul>
-    </body>
     </header>
     <main>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
@@ -142,6 +156,7 @@
             <p>"2 de mayo de 2017"</p>
         </article>
     </section>
+
     </main>
 
 
