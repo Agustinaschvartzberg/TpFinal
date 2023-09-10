@@ -79,22 +79,22 @@ p{
 .Peliculas-mas-vistas article img{
     align-self: center;
     align-items: center;
-    width: 130px;
-    height: 180px; 
+    width: 250px;
+    height: 300px; 
     padding: 30px;
 }
 .Peliculas-Populares article img{
     align-self: center;
     align-items: center;
-    width: 130px;
-    height: 180px;
+    width: 250px;
+    height: 300px;
     padding: 30px;
 }
 .Series article img{
     align-self: center;
     align-items: center;
-    width: 130px;
-    height: 180px;
+    width: 250px;
+    height: 300px;
     padding: 30px;
 }
 
