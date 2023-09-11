@@ -8,24 +8,53 @@
         <title>Proyecto Integrador</title>
     </head>
    
-    <header>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
-        <h1>MOVIE MANIA</h1>
-        <body class="coneccion">
-            <ul class="lista">
-                <head> <li><a href="./search-results.html" class="letracomun">SEARCH</a></li></head>
-                <head> <li><a href="./genres.html" class="letracomun">GENRES</a></li></head>
-                <head> <li><a href="./favorite.html" id="letracomun">FAVORITE</a></li></head>
-                <head> <li><a href="./detail-serie.html" id="letracomun">DETAIL SERIE</a></li></head>
-                <head> <li><a href="./detail-movie.html" id="letracomun">DETAIL MOVIE</a></li></head>
-                <head> <li><a href="./detail-genres.html" id="letracomun">DETAIL GENRES</a></li></head>
-            </ul>
-            <img src="../img/LOGO.png" width="260px" height="300">
-        </body>
-        <h3> Formulario: </h3>
-    <form action="resultados.html" method ="GET">
-        <section class="Formulario">
-        <div>
+   
+        <body>
+             <header class="header">
+                <nav class = "nav">
+                <img  src="../img/film-solid.svg" width="50px" height="45px" class="logo" >
+                <ul class="nav-menu">
+                
+                    <li class="nav-menu-item"> 
+                        <a href="index.html" class="nav-menu-link nav-link">Home</a>
+                    </li>
+                <li class="nav-menu-item"> 
+                    <a href="./search-results.html" class="nav-menu-link nav-link">Search</a>
+                </li>
+                <li class="nav-menu-item"> 
+                    <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
+                </li>
+                <li class="nav-menu-item"> 
+                    <a href="./favorite.html" class="nav-menu-link nav-link">Favorite</a>
+                </li>
+                <li class="nav-menu-item"> 
+                    <a href="./detail-serie.html" class="nav-menu-link nav-link">Detail Serie</a>
+                </li>
+                <li class="nav-menu-item"> 
+                    <a href="./detail-movie.html" class="nav-menu-link nav-link">Detail Movie</a>
+                </li>
+                <li class="nav-menu-item"> 
+                    <a href="./detail-genres.html" class="nav-menu-link nav-link">Detail Genre</a>
+                </li>
+
+            </nav>
+            </div>
+        </header>
+        </ul>
+        
+        <body>           
+            <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+            <br>
+            <br>
+            <h1>MOVIE MANIA</h1>
+            <div class="contendor">
+                <img src="../img/LOGO.png" width="260px" height="300" >
+                
+                <h3> Formulario: </h3>
+                <form action="resultados.html" method ="GET">
+                    <section class="Formulario">
+       
+                        <div>
             <input id="inputNombre" type="text" name="inputNombre" value="" placeholder="Buscador">
         </div>
         <div>
@@ -37,43 +66,42 @@
         <button type="submit">Enviar</button>
     </section>
     </form>
-
-    </header>
+</body>
     <main>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
         <h2>Peliculas Populares</h2> 
         <section class="Peliculas-Populares">  
         <article class="Bohemian Rhapsody">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Bohemian Rhapsody</h3>
+            <h3> <a href="detail-movie.html" id="letracomun"> Bohemian Rhapsody</a></h3>
             <img src="../img/bohemian.jpg" width="150px" height="200px">
             <p>"24 de octubre de 2018"</p> 
         </article>
          
         <article class="Guardians of the galaxy">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Guardians of the Galaxy</h3>
+            <h3><a href="detail-movie.html" id="letracomun">Guardians of the Galaxy </a></h3>
             <img src="../img/guardians.jpeg" width="150px" height="200px">
             <p>"31 de julio de 2014"</p>
         </article>
          
         <article class="Kingsman">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Kingsman</h3>
+            <h3><a href="detail-movie.html" id="letracomun"> Kingsman </a></h3>
             <img src="../img/kingsman.jpeg" width="150px" height="200px">
             <p>"24 de enero de 2015"</p>
         </article>
          
         <article class="A star is born">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>A star is born</h3>
+            <h3><a href="detail-movie.html" id="letracomun"> A star is born </a></h3>
             <img src="../img/star.jpg" width="150px" height="200px">
             <p>"11 de octubre de 2018"</p>
         </article>
          
         <article class="Clueless"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Clueless</h3>
+            <h3><a href="detail-movie.html" id="letracomun"> Clueless </a></h3>
             <img src="../img/clueless.jpg" width="150px" height="200px">
             <p>"7 de diciembre de 1995"</p>
         </article>
@@ -84,35 +112,35 @@
     <section class="Peliculas-mas-vistas" >  
         <article class="The Notebook"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>The Notebook</h3>
+            <h3><a href="detail-movie.html" id="letracomun">The Notebook </a></h3>
             <img src="../img/notebook.jpg" width="150px" height="200px">
             <p>"28 de octubre de 2004"</p> 
         </article>
             
         <article class="The Joker">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>The Joker</h3>
+            <h3><a href="detail-movie.html" id="letracomun"> The Joker </a></h3>
             <img src="../img/joker.jpeg" width="150px" height="200px">
             <p>"4 de octubre de 2019"</p>
         </article>
             
         <article class="Once upon a time in hollywood"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Once upon a time in hollywood</h3>
+            <h3><a href="detail-movie.html" id="letracomun">Once upon a time in hollywood </a></h3>
             <img src="../img/hollywood.jpg" width="150px" height="200px">
             <p>"26 de julio de 2019"</p>
         </article>
             
         <article class="Pretty Woman"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Pretty Woman</h3>
+            <h3><a href="detail-movie.html" id="letracomun"> Pretty Woman </a></h3>
             <img src="../img/women.jpeg" width="150px" height="200px">
             <p>"11 de octubre de 1990"</p>
         </article>
             
         <article class="Fast and Furious"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Fast ans Furious</h3>
+            <h3><a href="detail-movie.html" id="letracomun"> Fast ans Furious </a></h3>
             <img src="../img/fastand.webp" width="150px" height="200px">
             <p>"17 de noviembre de 2001"</p>
         </article>
@@ -123,35 +151,35 @@
     <section class="Series" >  
         <article class="Gossip Girl"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Gossip Girl</h3>
+            <h3><a href="detail-serie.html" id="letracomun"> Gossip Girl </a></h3>
             <img src="../img/gossip.webp" width="150px" height="200px">
             <p>"19 de septiembre de 2007"</p> 
         </article>
             
         <article class="Los Simpsons">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Los Simpsons</h3>
+            <h3><a href="detail-serie.html" id="letracomun">Los Simpsons </a></h3>
             <img src="../img/simpsons.jpeg" width="150px" height="200px">
             <p>"17 de diciembre de 1989"</p>
         </article>
             
         <article class="Outebanks">
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Outerbanks</h3>
+            <h3><a href="detail-serie.html" id="letracomun">Outerbanks </a></h3>
             <img src="../img/banks.webp" width="150px" height="200px">
             <p>"15 de abril de 2020"</p>
         </article>
             
         <article class="Elite"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>Elite</h3>
+            <h3><a href="detail-serie.html" id="letracomun"> Elite </a></h3>
             <img src="../img/elite.jpeg" width="150px" height="200px">
             <p>"5 de octubre de 2018"</p>
         </article>
             
         <article class="La casa de papel"> 
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-            <h3>La casa de papel</h3>
+            <h3><a href="detail-serie.html" id="letracomun">La casa de papel </a></h3>
             <img src="../img/papel.jpeg" width="150px" height="200px">
             <p>"2 de mayo de 2017"</p>
         </article>
@@ -164,3 +192,5 @@
         <p> Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
     </footer>
 </html>
+</body>    
+</body>

@@ -3,6 +3,57 @@ html{
 }
 
 
+.contendor {
+    text-align: center;
+}
+
+.header{
+    background-color: blue;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none ;
+
+}
+
+.nav-menu-item {
+    line-height: 80px;
+    margin: 0 10px;
+    font-size: 18px;
+
+}
+
+.nav-menu-link {
+    padding: 8px;
+}
+
+
 
 main{
     display: flex;
@@ -62,6 +113,7 @@ h3{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    color: black;
 }
 
 h1{
@@ -127,6 +179,25 @@ p{
    font-size: 30px;
    font-weight: lighter;
 }
+
+.contendor1 {
+    text-align: center;
+}
+.Tus-Favoritas{
+  /* propiedades de flexbox*/
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; 
+  padding: 80px;  
+}
+.Tus-Favoritas2 {
+    align-items: center;
+}
+
+
 
 
 
