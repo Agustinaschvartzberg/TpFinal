@@ -165,13 +165,20 @@ p{
     padding: 80px;
 }
 
-.Musical {
+.musical {
     flex-direction: row;
     display: flex;
     text-align: center;
 }
 
-.Drama {
+.musical{
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+
+}
+
+#musical {
     flex-direction: row;
     display: flex;
     text-align: center;
@@ -179,6 +186,24 @@ p{
    font-size: 30px;
    font-weight: lighter;
 }
+
+
+.drama {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+
+#drama {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+   font-family: 'Josefine+Sans', sans-serif;
+   font-size: 30px;
+   font-weight: lighter;
+}
+
+
 
 .contendor1 {
     text-align: center;
