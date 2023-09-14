@@ -198,7 +198,38 @@ p{
     align-items: center;
 }
 
+@media (max-width:900px) {
+.Peliculas-Populares {
+    padding: 20px;
+    width: 95vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
-
+.Peliculas-mas-vistas{
+    padding: 20px;
+    width: 95vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.Series{
+    padding: 20px;
+    width: 95vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.header {
+    padding: 20px;
+    width: 95vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.logoyform {
+    padding: 20px;
+    width: 95vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+}
 
 
