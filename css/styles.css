@@ -223,6 +223,10 @@ p{
     align-items: center;
 }
 
+.NEGRITO {
+    font-weight: bold;
+    }
+
 @media (max-width:900px) {
 .Peliculas-Populares {
     padding: 20px;
