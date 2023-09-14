@@ -2,6 +2,11 @@ html{
     background-color: lightblue;
 }
 
+.formulario {
+    margin:auto;
+    text-align: left;
+
+}
 
 .contendor {
     text-align: center;
@@ -222,6 +227,7 @@ p{
 .Tus-Favoritas2 {
     align-items: center;
 }
+
 
 .NEGRITO {
     font-weight: bold;
