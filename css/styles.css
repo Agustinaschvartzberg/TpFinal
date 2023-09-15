@@ -4,8 +4,8 @@ html{
 
 .formulario {
     margin:auto;
-    text-align: left;
-
+    padding: 15px;
+    border-radius: 30px;
 }
 
 .contendor {
@@ -14,7 +14,6 @@ html{
 
 .header{
     background-color: blue;
-    height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -38,6 +37,7 @@ html{
     font-weight: bold;
     padding: 0 40px;
     line-height: 80px;
+    border-radius: 15px 15px 15px;
 }
 
 .nav-menu{
@@ -51,6 +51,7 @@ html{
     line-height: 80px;
     margin: 0 10px;
     font-size: 18px;
+    list-style: none;
 
 }
 
@@ -112,6 +113,7 @@ h2 {
    border-width: 3px;
    border-color: gray;
    border-style: solid;
+   border-radius: 15px 15px 15px;
 } 
 
 h3{
@@ -120,6 +122,11 @@ h3{
     font-size: 20px;
     color: black;
 }
+.cajatexto {
+    display: flex;  
+    justify-content: center;
+    /*SIEMPRE PRIMERO*/
+}
 
 h1{
     text-align: center;
@@ -127,7 +134,9 @@ h1{
     font-size: 40px;
     font-weight: bolder;
     color: blue;
-    margin-top: 90px;
+    margin-top: 180px;
+
+
 }
 
 p{
@@ -232,6 +241,14 @@ p{
 .NEGRITO {
     font-weight: bold;
     }
+
+@media (max-width:1100px) {
+    .nav {
+        flex-direction: column;
+    }
+
+
+}
 
 @media (max-width:900px) {
 .Peliculas-Populares {
