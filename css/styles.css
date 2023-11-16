@@ -6,30 +6,41 @@ html{
     margin:auto;
     padding: 15px;
 }
-input{
-    border-radius: 30px;
+
+.formulario input {
     padding: 15px;
     height: 25px;
-    width: 300px;
+}
+
+.formulario button {
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
 }
 
 .contendor {
     text-align: center;
 }
 
-.header{
+.header {
     background-color: blue;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left:0;
-
+    position: sticky;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    flex-direction: row;
 }
 
 .nav-link{
@@ -81,7 +92,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 80px;
+    padding: 20px;
 }
 
 .Peliculas-mas-vistas{
@@ -92,7 +103,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 80px;
+    padding: 20px;
 }
 
 .Series{
@@ -103,7 +114,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 80px;
+    padding: 20px;
 }
 
 h2 {
@@ -113,6 +124,7 @@ h2 {
    font-weight: lighter;
    background-color: blue;
    color: white;
+   padding: 4px;
    /* propiedades de flexbox*/
    box-sizing: border-box;
    border-width: 3px;
@@ -127,6 +139,7 @@ h3{
     font-size: 20px;
     color: black;
 }
+
 .cajatexto {
     display: flex;  
     justify-content: center;
@@ -140,12 +153,6 @@ h1{
     font-weight: bolder;
     color: blue;
     margin-top: 180px;
-
-
-}
-
-p{
-    text-align: center;
 }
 
 .Peliculas-mas-vistas article img{
@@ -155,6 +162,7 @@ p{
     height: 300px; 
     padding: 30px;
 }
+
 .Peliculas-Populares article img{
     align-self: center;
     align-items: center;
@@ -162,6 +170,7 @@ p{
     height: 300px;
     padding: 30px;
 }
+
 .Series article img{
     align-self: center;
     align-items: center;
@@ -191,22 +200,14 @@ p{
     text-align: center;
 }
 
-.musical{
-    flex-direction: row;
-    display: flex;
-    text-align: center;
-
-}
-
 #musical {
     flex-direction: row;
     display: flex;
     text-align: center;
-   font-family: 'Josefine+Sans', sans-serif;
-   font-size: 30px;
-   font-weight: lighter;
+    font-family: 'Josefine+Sans', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
 }
-
 
 .drama {
     flex-direction: row;
@@ -218,16 +219,15 @@ p{
     flex-direction: row;
     display: flex;
     text-align: center;
-   font-family: 'Josefine+Sans', sans-serif;
-   font-size: 30px;
-   font-weight: lighter;
+    font-family: 'Josefine+Sans', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
 }
-
-
 
 .contendor1 {
     text-align: center;
 }
+
 .Tus-Favoritas{
   /* propiedades de flexbox*/
   box-sizing: border-box;
@@ -238,14 +238,14 @@ p{
   justify-content: space-between; 
   padding: 80px;  
 }
+
 .Tus-Favoritas2 {
     align-items: center;
 }
 
-
 .NEGRITO {
     font-weight: bold;
-    }
+}
 
 @media (max-width:1100px) {
     .nav {
@@ -267,12 +267,14 @@ p{
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
 .Series{
     padding: 20px;
     width: 95vw;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
 .header {
     padding: 20px;
     width: 95vw;
@@ -280,12 +282,14 @@ p{
     justify-content: flex-start;
     flex: block;
 }
+
 .logoyform {
     padding: 20px;
     width: 95vw;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
 input {
     width: 250px;
 }
@@ -299,9 +303,11 @@ input {
     text-align: center;
     display: block;
 }
+
 .nav-menu-item{
     line-height: 20px;
 }
+
 .header{
     width: 100vw;
     flex-wrap: wrap;
@@ -309,9 +315,11 @@ input {
     flex: block;
     position: initial;
 }
+
 h1{
     margin-top: 20px;
 }
+
 .logoyform {
     padding: 10px;
     width: 100vw;
@@ -319,9 +327,11 @@ h1{
     justify-content: flex-start;
     height: 50vw;
 }
+
 input {
     width: 100px;
 }
+
 .Peliculas-Populares {
     padding: 10px;
     width: 50vw;
@@ -337,6 +347,7 @@ input {
     justify-content: flex-start;
     text-align: center;
 }
+
 .Series{
     padding: 10px;
     width: 50vw;
@@ -345,3 +356,4 @@ input {
 }
 }
 
+/* A PARTIR DE ACA LO HACEMOS DESPUES DE TERMINAR CON LO OTRO A LO ULTIMO*/
