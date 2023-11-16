@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="https://fonts.google.com/">
-        <title>Favoritos</title>
-    </head>
-    <header>
-    <body class="coneccion">
-        <ul class="lista">
-            <header class="header">
-                <nav class = "nav">
-                <img  src="../img/film-solid.svg" width="50px" height="45px" class="logo" >
-                <div class="formulario">
-                    <form autocomplete="off">
-                        <div>
-                            <input type="genero" name="genero" value="" placeholder="Indica tu genero favorito"> 
-                            <button type="submit"><a href="search-results.html">Enviar</a></button>
-                        </div>
-                       
-                </div>
-            </form>
-                <ul class="nav-menu">
-                
-                    <li class="nav-menu-item"> 
-                        <a href="index.html" class="nav-menu-link nav-link">Home</a>
-                    </li>
-                <li class="nav-menu-item"> 
-                    <a href="./search-results.html" class="nav-menu-link nav-link">Search</a>
-                </li>
-                <li class="nav-menu-item"> 
-                    <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
-                </li>
-                <li class="nav-menu-item"> 
-                    <a href="./favorite.html" class="nav-menu-link nav-link">Favorite</a>
-                </li>
-                
-                <script src="./index.js"></script>
-            </nav>
-            </div>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Detalles de series</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="../img/film-solid.svg"
+          width="50px"
+          height="45px"
+          class="logo"
+        />
+        <div class="formulario">
+          <form
+            autocomplete="off"
+            id="formularioBusqueda"
+            action="./search-results.html"
+            method="GET"
+          >
+            <input
+              type="text"
+              name="search"
+              value=""
+              placeholder="Busca series y peliculas..."
+              id="buscador"
+            />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="index.html" class="nav-menu-link nav-link">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
+          </li>
         </ul>
-    <ul> 
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-        <h2>Bohemian Rapsody</h2>
-    </ul>
-    <section id="genres-movies">
-        <h1>Tus Favoritas:</h1>
-
-        <section class="Peliculas-Populares" >  
-            <article class="The Notebook"> 
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-                <h3><a href="detail-movie.html" id="letracomun">The Notebook </a></h3>
-                <img src="../img/notebook.jpg" width="150px" height="200px">
-            </article>
-                
-            <article class="The Joker">
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-                <h3><a href="detail-movie.html" id="letracomun"> The Joker </a></h3>
-                <img src="../img/joker.jpeg" width="150px" height="200px">
-            </article>
-            <article class="Kingsman">
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-                <h3><a href="detail-movie.html" id="letracomun"> Kingsman </a></h3>
-                <img src="../img/kingsman.jpeg" width="150px" height="200px">
-            </article>
-             
-            <article class="A star is born">
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-                <h3><a href="detail-movie.html" id="letracomun"> A star is born </a></h3>
-                <img src="../img/star.jpg" width="150px" height="200px">
-            </article>
-             
-        </section>
-    </body>
+      </nav>
     </header>
-    </ul>
+    <main>
+      <h2 class="titulo"></h2>
+      <div class="contenedorDetallePelicula"></div>
+      <h2>Trailer</h2>
+      <div class="contenedorTrailer"></div>
+      <h2>Reviews</h2>
+      <div class="contenedorReviews"></div>
+    </main>
     <footer>
-        <p> Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
-
-        <img  src="../img/logo2].png"  width="70px" height="50px" class="logo2" >
+      <p>Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
+      <img src="../img/logo2].png" width="70px" height="50px" class="logo2" />
     </footer>
-        
-    </body>
+    <script src="../js/detail-serie.js"></script>
+  </body>
 </html>
