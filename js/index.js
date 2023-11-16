@@ -21,3 +21,54 @@ fetch(seriesPopulares)
   .catch(function (error) {
     console.log(error);
   });
+
+  // Hacemos el fetch de las peliculas mas populares
+fetch(peliculasMasPopulares)
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+  // En este then lo que hacemos es recorrer los resultados y mostrarlos en pantalla
+  // En este caso, los resultados son un array de peliculas
+  // Cada pelicula tiene un titulo, una imagen y un id
+  // Vamos a utilizar el id para ir al detalle de cada pelicula
+  // Vamos a mostrar los primeros 8
+
+
+  let contenedorPopulares = document.querySelector(".Peliculas-Populares");
+  let peliculasPopulares = data.results;
+  for (let i = 0; i < 8; i++) {
+    contenedorPopulares.innerHTML += `<li class="item"><a href="./detail-movie.html?id=${peliculasPopulares[i].id}"><img src="https://image.tmdb.org/t/p/w500${peliculasPopulares[i].poster_path}" alt="Poster">
+          <p>${peliculasPopulares[i].original_title}</p>
+          <p>${peliculasPopulares[i].release_date}</p>
+          </a></li>`;
+  }
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+
+// Hacemos el fetch de las peliculas mas votadas
+fetch(peliculasMasVotadas)
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+  // En este then lo que hacemos es recorrer los resultados y mostrarlos en pantalla
+  // En este caso, los resultados son un array de peliculas
+  // Cada pelicula tiene un titulo, una imagen y un id
+  // Vamos a utilizar el id para ir al detalle de cada pelicula
+  // Vamos a mostrar los primeros 8
+  let contenedorMasVistas = document.querySelector(".Peliculas-mas-vistas");
+  let peliculasMasVistas = data.results;
+  for (let i = 0; i < 8; i++) {
+    contenedorMasVistas.innerHTML += `<li class="item"><a href="./detail-movie.html?id=${peliculasMasVistas[i].id}"><img src="https://image.tmdb.org/t/p/w500${peliculasMasVistas[i].poster_path}" alt="Poster">
+          <p>${peliculasMasVistas[i].original_title}</p>
+          <p>${peliculasMasVistas[i].release_date}</p>
+          </a></li>`;
+  }
+})
+.catch(function (error) {
+  console.log(error);
+});

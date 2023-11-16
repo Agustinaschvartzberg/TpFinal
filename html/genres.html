@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="https://fonts.google.com/">
-        <title>Detalles de generos</title>
-    </head>
-    <header>
-    <body>
-        <header class="header">
-            <nav class = "nav">
-            <img  src="../img/film-solid.svg" width="50px" height="45px" class="logo" >
-            <div class="formulario">
-                <form autocomplete="off">
-                    <div>
-                        <input type="genero" name="genero" value="" placeholder="Indica tu genero favorito">
-                        <button type="submit" id="boton-buscar"><a href="search-results.html">Enviar</a></button>
-                    </div>
-                    
-            </div>
-        </form>
-            <ul class="nav-menu">
-
-            <li class="nav-menu-item"> 
-                <a href="index.html" class="nav-menu-link nav-link">Home</a>
-            </li>
-            <li class="nav-menu-item"> 
-                <a href="./search-results.html" class="nav-menu-link nav-link">Search</a>
-            </li>
-            <li class="nav-menu-item"> 
-                <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
-            </li>
-            <li class="nav-menu-item"> 
-                <a href="./favorite.html" class="nav-menu-link nav-link">Favorite</a>
-            </li>
-            <script src="./index.js"></script>
-            </ul>
-
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Generos</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="../img/film-solid.svg"
+          width="50px"
+          height="45px"
+          class="logo"
+        />
+        <div class="formulario">
+          <form
+            autocomplete="off"
+            id="formularioBusqueda"
+            action="./search-results.html"
+            method="GET"
+          >
+            <input
+              type="text"
+              name="search"
+              value=""
+              placeholder="Busca series y peliculas..."
+              id="buscador"
+            />
+            <button type="submit">Enviar</button>
+          </form>
         </div>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="index.html" class="nav-menu-link nav-link">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    
-        <h1>Detalle de los Géneros </h1>
-        
-        <h2>Musical</h2>
-            <p>El cine musical es un género cinematográfico que se caracteriza por películas que contienen inte- rrupciones en su desarrollo, para dar un breve receso (pausa) por medio de un fragmento musical cantado o acompañados de una coreografía.</p>  
-    </section>
-            <h2>Drama</h2>
-            <p>El término de hecho proviene del griego drama que traduce “actuar”, lo cual tiene mucho sentido pues en el drama la acción literaria y ficcional es llevada a escena mediante diálogos y acciones en un tiempo presente indefinido. Tradicionalmente se distingue entre drama y teatro, sin embargo.</p>
-
-    </section>
-    
-   
-       
-        
-    </header>
-
-
-
-
-
-
-
-    
-        
-    </body>
+    <main>
+      <div>
+        <h2>Generos de Peliculas</h2>
+        <ul class="listaPeliculas"></ul>
+      </div>
+      <div>
+        <h2>Generos de TV</h2>
+        <ul class="listaTV"></ul>
+      </div>
+    </main>
     <footer>
-        <p> Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
-        <img  src="../img/logo2].png"  width="70px" height="50px" class="logo2">
+      <p>Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
+      <img src="../img/logo2].png" width="70px" height="50px" class="logo2" />
     </footer>
+    <script src="../js/lista-generos.js"></script>
+  </body>
 </html>
