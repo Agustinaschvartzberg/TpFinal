@@ -1,80 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="https://fonts.google.com/">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <title>Detalles de series</title>
-    </head>
-    
-    <body>
-        <header class="header">
-            <nav class="nav">
-                <img
-                  src="../img/film-solid.svg"
-                  width="50px"
-                  height="45px"
-                  class="logo"/>
-                <div class="formulario">
-                <form
-                    autocomplete="off"
-                    id="formularioBusqueda"
-                    action="./search-results.html"
-                    method="GET">
-                    <input
-                       type="text"
-                       name="search"
-                       value=""
-                       placeholder="Busca series y peliculas..."
-                       id="buscador"/>
-                    <button type="submit">Enviar</button>
-                </form>
-                </div>
-       
-            <ul class="nav-menu">
-                <li class="nav-menu-item"> 
-                 <a href="index.html" class="nav-menu-link nav-link">Home</a>
-                </li>
-                <li class="nav-menu-item"> 
-                 <a href="./search-results.html" class="nav-menu-link nav-link">Search</a>
-                </li>
-                <li class="nav-menu-item"> 
-                 <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
-                </li>
-                <li class="nav-menu-item"> 
-                 <a href="./favorite.html" class="nav-menu-link nav-link">Favorite</a>
-                </li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Detalles de series</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="../img/film-solid.svg"
+          width="50px"
+          height="45px"
+          class="logo"
+        />
+        <div class="formulario">
+          <form
+            autocomplete="off"
+            id="formularioBusqueda"
+            action="./search-results.html"
+            method="GET"
+          >
+            <input
+              type="text"
+              name="search"
+              value=""
+              placeholder="Busca series y peliculas..."
+              id="buscador"
+            />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="index.html" class="nav-menu-link nav-link">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    
     <main>
-        <h1>Detalles de la Serie </h1>
-        <h2>Gossip Girl</h2>
-        <h2 class="titulo"></h2>
+      <h2 class="titulo"></h2>
       <div class="contenedorDetallePelicula"></div>
       <h2>Trailer</h2>
       <div class="contenedorTrailer"></div>
       <h2>Reviews</h2>
       <div class="contenedorReviews"></div>
     </main>
-    
-    <div class="contendor">
-        <img src="../img/gossip.webp" width="260px" height="300">
-
-    <p class="NEGRITO">Calificación: <div> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> </div>
-    <p class="NEGRITO">Fecha de Estreno: </p> <p> 19/09/2007</p>
-    <p class="NEGRITO">Duración:  </p> <p>45 minutos</p>
-    <p class="NEGRITO">Sinópsis: </p> <p>Este drama adolescente se basa en la serie homónima de novelas escrita por Cecily von Ziegesar y adaptada a televisión por Josh Schwartz ('The O.C.', 'Chuck') y Stephanie Savage ('The O.C'). La serie está narrada por la bloguera omnisciente "Reina Cotilla" -Gossip Girl-, (voz por Kristen Bell, 'Héroes', 'Veronica Mars') que desde su anonimato repasa los secretos y temas más íntimos de un grupo de jóvenes de la alta sociedad del barrio Upper East Side en Manhattan, Nueva York. Esta historia comienza con la vuelta al vecindario de Serena van der Woodsen (Blake Lively, 'Saturday Night Live') tras una misteriosa estancia en un internado de Cornwall, en Connecticut. Sin embargo, el personaje más importante de la serie es precisamente Blair Waldorf (Lighton Meester, 'Shark', 'House'), amiga en el pasado y mayor rival en la actualidad de Serena. Blair es la Abeja Reina del instituto, popular donde las haya.La trama también sigue a otros personajes como Chuck Bass (Ed Westwick, 'J. Edgar'), el chico malo del barrio; Nate Archibald (Chace Crawford, 'Peace, Love and Misunderstanding'), mejor amigo de Chuck y novio de Blair; Dan Humphrey (Penn Badgley, 'Margin Call', 'El padrastro'), chico de origen humilde con el que Serena tiene una complicada relación sentimental; Vannesa Abrams (Jessica Szohr, 'CSI: Miami'), mejor amiga y ex novia de Dan, y Jenny Humprey (Taylor Momsen, 'Spy Kids 2'), hermana del mismo personaje.</p>
-    <p class="NEGRITO">Género: <a href="genres.html">Drama</a></p>
-    <button><a href="search-results.html" id="boton-buscar" >Agregar a Favoritos</a></button>
-    </div>
-    
     <footer>
-        <p>Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
-        <img src="../img/logo2].png" width="70px" height="50px" class="logo2" />
+      <p>Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
+      <img src="../img/logo2].png" width="70px" height="50px" class="logo2" />
     </footer>
     <script src="../js/detail-serie.js"></script>
   </body>

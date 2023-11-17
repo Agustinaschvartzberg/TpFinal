@@ -83,30 +83,3 @@ fetch(reviews)
     console.log(error);
   });
 
-// En este fetch lo que hacemos es buscar el trailer con el query que nos llega por la url
-fetch(trailer)
-  .then(function (res) {
-    return res.json();
-  })
-  .then(function (data) {
-    // En este then lo que hacemos es recorrer los resultados y mostrarlos en pantalla
-    let contenedorTrailer = document.querySelector(".contenedorTrailer");
-    // Si no hay resultados, mostramos que no hay trailer
-    if (data.results.length == 0) {
-      contenedorTrailer.innerHTML += `
-      <div class="review">
-      <h3>No hay trailer para esta serie</h3>
-      </div>
-      `;
-    }
-    // Si hay resultados, obtenemos el primer resultado para mostrar en pantalla
-    let trailer = data.results[0];
-    // Cada trailer tiene un key que es el id del video
-    // Usamos ese id para mostrar el video en pantalla
-    let key = trailer.key;
-    // Muestra en pantalla el trailer con un iframe
-    contenedorTrailer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
