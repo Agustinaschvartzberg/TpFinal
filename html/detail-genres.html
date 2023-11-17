@@ -5,27 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="https://fonts.google.com/">
-        <title>Generos</title>
+        <title>Detalle de generos</title>
     </head>
     
+    <body>
     <header class="header">
         <nav class = "nav">
             <div id="busqueda"> <div>
-        <img  src="../img/film-solid.svg" width="50px" height="45px" class="logo" >
+        <img
+          src="../img/film-solid.svg" 
+          width="50px" 
+          height="45px" 
+          class="logo" 
+          />
         <div class="formulario">
-            <form autocomplete="off">
-                <div>
-                    <input type="genero" name="genero" value="" placeholder="Indica tu genero favorito">
-                    <button type="submit" >Enviar</a></button>
-                </div>
-                
+            <form 
+               utocomplete="off"
+               id="formularioBusqueda"
+               action="./search-results.html"
+               method="GET">
+            <input 
+               type="genero" 
+               name="genero" 
+               value="" 
+               placeholder="Indica tu genero favorito"
+               id="buscador"/>
+            <button type="submit" >Enviar</button>
+            </form>
         </div>
-    </form>
+               
         <ul class="nav-menu">
-        
-        <li class="nav-menu-item"> 
+            <li class="nav-menu-item"> 
             <a href="index.html" class="nav-menu-link nav-link">Home</a>
-        </li>
+            </li>
         <li class="nav-menu-item"> 
             <a href="./search-results.html" class="nav-menu-link nav-link">Search</a>
         </li>
@@ -35,14 +47,16 @@
         <li class="nav-menu-item"> 
             <a href="./favorite.html" class="nav-menu-link nav-link">Favorite</a>
         </li>
+        </ul>
         <script src="./index.js"></script>
     </nav>
     </div>
 </header>
 </ul>
 </body>
+
 <main>
-    <h1>Generos de las peliculas</h1> 
+    <h1>Detalles de generos de peliculas</h1> 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <h2>Drama</h2> 
     <section class="Peliculas-Populares">  

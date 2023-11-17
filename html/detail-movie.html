@@ -9,47 +9,59 @@
         <title>Detalles de peliculas</title>
     </head>
     
-    <header>
+    
     <body>
         <header class="header">
-            <nav class = "nav">
-            <img  src="../img/film-solid.svg" width="50px" height="45px" class="logo" >
+        <nav class = "nav">
+            <img  
+            src="../img/film-solid.svg" 
+            width="50px" 
+            height="45px" 
+            class="logo" />
             <div class="formulario">
-                <form autocomplete="off">
-                    <div>
-                        <input type="genero" name="genero" value="" placeholder="Indica tu genero favorito"> 
-                        <button type="submit"><a href="search-results.html">Enviar</a></button>
-                    </div>
-                   
+                <form 
+                autocomplete="off"
+                id="formularioBusqueda"
+                action="./search-results.html"
+                method="GET">
+
+                <input 
+                type="genero" 
+                name="genero" 
+                value="" 
+                placeholder="Indica tu genero favorito"
+                id="buscador" /> 
+                
+                <button type="submit">Enviar</button>
+            </form>
             </div>
-        </form>
+
             <ul class="nav-menu">
-            
-            <li class="nav-menu-item"> 
-                <a href="index.html" class="nav-menu-link nav-link">Home</a>
-            </li>
-            
-            <li class="nav-menu-item"> 
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link">Home</a>
+                </li>
+                <li class="nav-menu-item"> 
                 <a href="./search-results.html" class="nav-menu-link nav-link">Search</a>
-            </li>
-            <li class="nav-menu-item"> 
-                <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
-            </li>
-            <li class="nav-menu-item"> 
-                <a href="./favorite.html" class="nav-menu-link nav-link">Favorite</a>
-            </li>
-            <script src="./index.js"></script>
+                </li>
+                <li class="nav-menu-item"> 
+                    <a href="./genres.html" class="nav-menu-link nav-link">Genres</a>
+                </li>
+                <li class="nav-menu-item"> 
+                    <a href="./favorite.html" class="nav-menu-link nav-link">Favorite</a>
+                </li>
             </ul>
         </nav>
-        </div>
-    </header>
+      </header>
 
-    <body>
-        <h1>Detalles de la Película </h1>
-    
-    
-    
-        <h2>Bohemian Rapsody</h2>
+        <main>
+            <h1>Detalles de la Película </h1>
+            <h2 class="titulo"></h2>
+            <div class="contenedorDetallePelicula"></div>
+            <h2>Trailer</h2>
+            <div class="contenedorTrailer"></div>
+            <h2>Reviews</h2>
+            <div class="contenedorReviews"></div>
+        </main>
 
         <div class="contendor"> 
         <img src="../img/bohemian.jpg" width="260px" height="300">
@@ -62,14 +74,10 @@
         <button><a href="favorite.html" id="boton-buscar" >Agregar a Favoritos</a></button>
         </div>
     
-    <footer>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p> Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
-        <img  src="../img/logo2].png" width="70px" height="50px" class="logo2" >
-    </footer>
-        
-    </body>
-</html>
+        <footer>
+            <p>Miembros:Sofia Attas, Agustina Schvartzberg y Victoria Stutzbach</p>
+            <img src="../img/logo2].png" width="70px" height="50px" class="logo2" />
+          </footer>
+          <script src="../js/detail-movie.js"></script>
+        </body>
+      </html>
