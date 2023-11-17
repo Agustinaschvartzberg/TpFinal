@@ -1,3 +1,4 @@
+//Definimos las variables importantes
 let consulta = location.search;
 let consulta_objeto = new URLSearchParams(consulta);
 let id = consulta_objeto.get("id");
@@ -66,7 +67,6 @@ fetch(reviews)
       </div>
       `;
     } else {
-      // Si el array de resultados es mayor a 0, recorremos el array y mostramos en pantalla
       for (let i = 0; i < reviews.length; i++) {
         let autor = reviews[i].author;
         let contenido = reviews[i].content;
