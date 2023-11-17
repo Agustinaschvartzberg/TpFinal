@@ -1,4 +1,3 @@
-//Definimos las variables importantes
 let consulta = location.search;
 let consulta_objeto = new URLSearchParams(consulta);
 let id = consulta_objeto.get("id");
@@ -15,6 +14,7 @@ fetch(urlpeliculas)
   })
   .then(function (data) {
     // En este then lo que hacemos es recorrer los resultados y mostrarlos en pantalla
+    // Cada pelicula tiene un titulo, una imagen y un id
     // El id lo usamos para crear el link a la pagina de detalle
     let contendor = document.querySelector(".contenedorDetallePelicula");
     let titulo = data.original_title;
@@ -25,10 +25,12 @@ fetch(urlpeliculas)
     let calificacion = data.vote_average;
     let generos = [];
     for (let i = 0; i < data.genres.length; i++) {
+      // Coloca todos los generos en un array
       generos.push(data.genres[i]);
     }
     let generosMostrar = "";
     for (let i = 0; i < generos.length; i++) {
+      // Recorre el array de generos y los pone en una etiqueta a
       generosMostrar += `<a  class="detalle-genero" href="./detail-genres-movie.html?id=${generos[i].id}&nombre_genero_pelicula=${generos[i].name}">${generos[i].name}</a>`;
     }
     // Muestra en pantalla los datos de la pelicula
@@ -67,6 +69,8 @@ fetch(reviews)
       </div>
       `;
     } else {
+      // Si el array de resultados es mayor a 0, recorremos el array y mostramos en pantalla
+      // Cada review tiene un autor y un contenido
       for (let i = 0; i < reviews.length; i++) {
         let autor = reviews[i].author;
         let contenido = reviews[i].content;
@@ -83,3 +87,31 @@ fetch(reviews)
     console.log(error);
   });
 
+// En este fetch lo que hacemos es buscar el trailer con el query que nos llega por la url
+fetch(trailer)
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    // En este then lo que hacemos es recorrer los resultados y mostrarlos en pantalla
+    let contenedorTrailer = document.querySelector(".contenedorTrailer");
+    // Si no hay resultados, mostramos que no hay trailer
+    if (data.results.length == 0) {
+      contenedorTrailer.innerHTML += `
+      <div class="review">
+      <h3>No hay trailer para esta serie</h3>
+      </div>
+      `;
+    }
+    // Si hay resultados, obtenemos el primer resultado para mostrar en pantalla
+    let trailer = data.results[0];
+    // Cada trailer tiene un key que es el id del video
+    // Usamos ese id para mostrar el video en pantalla
+    let key = trailer.key;
+    // Muestra en pantalla el trailer con un iframe
+    // El iframe es un elemento de html que nos permite mostrar videos de youtube
+    contenedorTrailer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
