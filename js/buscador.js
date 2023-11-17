@@ -58,4 +58,41 @@ fetch(urlpeliculas)
   .catch(function (error) {
     console.log(error);
   });
+// En este fetch lo que hacemos es buscar las series con el query que nos llega por la url
+fetch(urlseries)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (resultados) {
+    let titulo = document.querySelector(".buscado");
+    // En este caso, los resultados son un array de series
+    if (resultados.results.length == "") {
+      titulo.innerText = `No se encontraron resultados para ${buscado}`; //crear una alert
+    } else {
+      titulo.innerText = `Resultados para ${buscado}`;
+    }
+    let resultadosContenedor = document.querySelector(".resultadosBusqueda");
+    for (let i = 0; i < resultados.results.length; i++) {
+      // Recorremos los resultados y los mostramos en pantalla
+      // Cada serie tiene un titulo, una imagen y un id
+      // El id lo usamos para crear el link a la pagina de detalle
+      let serie = resultados.results[i];
+      let titulo = serie.name;
+      let imagen = serie.poster_path;
+      let id = serie.id;
+      let estreno = serie.first_air_date;
+      resultadosContenedor.innerHTML += `<li class="pelicula"><a href="./detail-serie.html?id=${id}"><img src="https://image.tmdb.org/t/p/w500${imagen}" alt="Poster">
+            <p>Nombre: ${titulo}</p>
+            <p>Estreno: ${estreno}</p>
+            </a></li>`;
+    }
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+// Lo que hacemos aca es que cuando se cargue la pagina, se quite el loader
+window.addEventListener("load", function () {
+  document.getElementById("loader").classList.toggle("loader2");
+});
 
